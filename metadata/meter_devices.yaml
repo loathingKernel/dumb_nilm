@@ -1,0 +1,12 @@
+Spark_5Min:
+  model: Sparkworks 5min Avg
+  manufacturer:
+  manufacturer_url:
+  description:
+  sample_period: 300
+  max_sample_period: 600
+  measurements:
+  - physical_quantity: current # in mA
+    upper_limit: 20
+    lower_limit: 0
+  wireless: false

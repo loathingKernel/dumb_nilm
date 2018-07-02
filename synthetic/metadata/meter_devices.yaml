@@ -1,0 +1,10 @@
+synthetic_5min:
+  model: Virtual 5min Average per phase
+  sample_period: 300
+  max_sample_period: 600
+  measurements:
+  - physical_quantity: power
+    type: reactive
+    upper_limit: 10000
+    lower_limit: 0
+  wireless: false

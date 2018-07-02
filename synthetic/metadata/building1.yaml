@@ -1,0 +1,183 @@
+instance: 1
+original_name: Patras Virtual High School
+elec_meters:
+  1:
+    site_meter: true
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter1
+  2:
+    site_meter: true
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter2
+  3:
+    site_meter: true
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter3
+  # Meter 1
+  10:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter10
+  11:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter11
+  12:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter12
+  13:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter13
+  14:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter14
+  15:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter15
+  16:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter16
+  17:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter17
+  18:
+    submeter_of: 1
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter18
+  # Meter 2
+  20:
+    submeter_of: 2
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter20
+  21:
+    submeter_of: 2
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter21
+  22:
+    submeter_of: 2
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter22
+  # Meter 3
+  30:
+    submeter_of: 3
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter30
+  31:
+    submeter_of: 3
+    device_model: synthetic_5min
+    data_location: /building1/elec/meter31
+appliances:
+# Building appliances
+  # Meter 1
+- type: linear fluorescent lamp
+  instance: 1
+  meters: [10]
+  count: 12
+  # Meter 2
+- type: linear fluorescent lamp
+  instance: 2
+  meters: [20]
+  count: 12
+  # Meter 3
+- type: linear fluorescent lamp
+  instance: 3
+  meters: [30]
+  count: 12
+- type: linear fluorescent lamp
+  instance: 4
+  meters: [31]
+  count: 12
+
+  # Meter 1
+- type: ethernet switch
+  instance: 1
+  meters: [11]
+  control: manual
+
+  # Meter 2
+- type: projector
+  instance: 1
+  meters: [21]
+  control: manual
+
+  # Meter 2
+- type: computer
+  instance: 1
+  meters: [22]
+  components:
+    - type: desktop computer
+      meters: [22]
+    - type: computer monitor
+      meters: [22]
+  control: manual
+  # Meter 1
+- type: computer
+  instance: 2
+  meters: [12]
+  components:
+    - type: desktop computer
+      meters: [12]
+    - type: computer monitor
+      meters: [12]
+  control: manual
+- type: computer
+  instance: 3
+  meters: [13]
+  components:
+    - type: desktop computer
+      meters: [13]
+    - type: computer monitor
+      meters: [13]
+  control: manual
+- type: computer
+  instance: 4
+  meters: [14]
+  components:
+    - type: desktop computer
+      meters: [14]
+    - type: computer monitor
+      meters: [14]
+  control: manual
+- type: computer
+  instance: 5
+  meters: [15]
+  components:
+    - type: desktop computer
+      meters: [15]
+    - type: computer monitor
+      meters: [15]
+  control: manual
+- type: computer
+  instance: 6
+  meters: [16]
+  components:
+    - type: desktop computer
+      meters: [16]
+    - type: computer monitor
+      meters: [16]
+  control: manual
+- type: computer
+  instance: 7
+  meters: [17]
+  components:
+    - type: desktop computer
+      meters: [17]
+    - type: computer monitor
+      meters: [17]
+  control: manual
+- type: computer
+  instance: 8
+  meters: [18]
+  components:
+    - type: desktop computer
+      meters: [18]
+    - type: computer monitor
+      meters: [18]
+  control: manual
+building_type: academic

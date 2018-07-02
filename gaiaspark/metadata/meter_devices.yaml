@@ -1,0 +1,10 @@
+gaiaspark_5min:
+  model: Sparkworks 5min Avg
+  sample_period: 300
+  max_sample_period: 600
+  measurements:
+  - physical_quantity: power
+    type: reactive
+    upper_limit: 10000
+    lower_limit: 0
+  wireless: false

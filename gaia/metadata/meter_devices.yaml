@@ -6,14 +6,14 @@ base_elec: &elecmeter
     lower_limit: 0
   wireless: true
 
-synthetic_raw_elec:
-  model: Virtual electrical sensors
+raw_elec:
+  model: GAIA Project electrical sensors
   sample_period: 30
   max_sample_period: 90
   <<: *elecmeter
 
-synthetic_avg_elec:
-  model: Virtual 5 minute electrical averages
+avg_elec:
+  model: GAIA Project 5 minute electrical averages
   sample_period: 300
   max_sample_period: 600
   <<: *elecmeter
@@ -32,14 +32,14 @@ base_env: &envmeter
     uri: humid
   wireless: true
 
-synthetic_raw_env:
-  model: Virtual enviromental sensors
+raw_env:
+  model: GAIA Project enviromental sensors
   sample_period: 30
   max_sample_period: 90
   <<: *envmeter
 
-synthetic_avg_env:
-  model: Virtual 5 minute enviromental averages
+avg_env:
+  model: GAIA Project 5 minute enviromental averages
   sample_period: 300
   max_sample_period: 600
   <<: *envmeter

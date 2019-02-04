@@ -1,59 +1,63 @@
 instance: 1
-original_name: Patras Experimental High School
+original_name: Πειραματικό Γυμνάσιο Πατρών
+building_type: academic
 elec_meters:
   1:
     site_meter: true
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter1
+    uuid: 0013a20040b55ff0/0xe44/cur/1
   2:
     site_meter: true
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter2
+    uuid: 0013a20040b55ff0/0xe44/cur/2
   3:
     site_meter: true
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter3
+    uuid: 0013a20040b55ff0/0xe44/cur/3
   # Meter 1
   10:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter10
   11:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter11
   12:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter12
   13:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter13
   14:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter14
   15:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter15
   16:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter16
   17:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter17
   18:
     submeter_of: 1
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter18
   # Meter 2
   20:
     submeter_of: 2
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter20
   21:
     submeter_of: 2
@@ -61,16 +65,16 @@ elec_meters:
     data_location: /building1/elec/meter21
   22:
     submeter_of: 2
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter22
   # Meter 3
   30:
     submeter_of: 3
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter30
   31:
     submeter_of: 3
-    device_model: synthetic_5min
+    device_model: synthetic_avg_elec
     data_location: /building1/elec/meter31
 appliances:
 # Building appliances
@@ -184,4 +188,3 @@ appliances:
     - type: computer monitor
       meters: [18]
   control: manual
-building_type: academic

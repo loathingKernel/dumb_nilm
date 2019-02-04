@@ -1,10 +1,10 @@
-name: gaiaraw
+name: gaia
 long_name:
 creators:
 publication_date:
 institution:
 contact:
-description: Months of data from schools in Patras, Greece. Raw data
+description: Months of data from schools in Patras, Greece
 subject: Raw average power demand from school buildings.
 geospatial_coverage: Greece
 number_of_buildings:

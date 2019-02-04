@@ -1,0 +1,22 @@
+instance: 4
+original_name: 1ο Επαγγελματικό Λύκειο Πατρών
+building_type: academic
+
+elec_meters:
+  1:
+    site_meter: true
+    device_model:
+    data_location: /building4/elec/meter1
+    meter_uri: 0013a20040b5619d/0xd0d/cur/1
+  2:
+    site_meter: true
+    device_model:
+    data_location: /building4/elec/meter2
+    meter_uri: 0013a20040b5619d/0xd0d/cur/2
+  3:
+    site_meter: true
+    device_model:
+    data_location: /building4/elec/meter3
+    meter_uri: 0013a20040b5619d/0xd0d/cur/3
+
+appliances:

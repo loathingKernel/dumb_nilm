@@ -1,7 +1,7 @@
 gaiaraw:
-  model: Sparkworks 5min Avg
-  sample_period: 300
-  max_sample_period: 600
+  model: Current meter made for GAIA
+  sample_period: 30
+  max_sample_period: 90
   measurements:
   - physical_quantity: power
     type: reactive

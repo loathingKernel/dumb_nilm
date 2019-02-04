@@ -5,17 +5,17 @@ elec_meters:
     site_meter: true
     device_model: gaiaraw
     data_location: /building1/elec/meter1
-    name: 0xe44/cur/1
+    meter_uri: 0013a20040b55ff0/0xe44/cur/1
   2:
     site_meter: true
     device_model: gaiaraw
     data_location: /building1/elec/meter2
-    name: 0xe44/cur/2
+    meter_uri: 0013a20040b55ff0/0xe44/cur/2
   3:
     site_meter: true
     device_model: gaiaraw
     data_location: /building1/elec/meter3
-    name: 0xe44/cur/3
+    meter_uri: 0013a20040b55ff0/0xe44/cur/3
 appliances:
 # Building appliances
   # Meter 1
@@ -23,26 +23,30 @@ appliances:
   instance: 1
   meters: [1]
   count: 12
+  control: manual
   # Meter 2
 - type: linear fluorescent lamp
   instance: 2
   meters: [2]
   count: 12
+  control: manual
   # Meter 3
 - type: linear fluorescent lamp
   instance: 3
   meters: [3]
   count: 12
+  control: manual
 - type: linear fluorescent lamp
   instance: 4
   meters: [3]
   count: 12
+  control: manual
 
   # Meter 1
 - type: ethernet switch
   instance: 1
   meters: [1]
-  control: manual
+  control: always on
 
   # Meter 2
 - type: projector

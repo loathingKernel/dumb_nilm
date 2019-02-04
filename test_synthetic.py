@@ -1,9 +1,9 @@
 from __future__ import print_function, division
 import os
 
-# import synthetic
-# synthetic.generate_dataset('data/synthetic.h5')
-# synthetic.convert_metadata('data/synthetic.h5')
+import synthetic
+synthetic.generate('data/synthetic.h5')
+synthetic.convert_metadata('data/synthetic.h5')
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -35,7 +35,6 @@ test.set_window(start="31-12-2017")
 
 train_elec = train.buildings[1].elec
 test_elec = test.buildings[1].elec
-
 
 co = combinatorial_optimisation.CombinatorialOptimisation()
 co.train(train_elec)

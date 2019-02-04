@@ -1,0 +1,6 @@
+[submodule "nilmtk"]
+	path = nilmtk
+	url = https://github.com/nilmtk/nilmtk
+[submodule "nilm_metadata"]
+	path = nilm_metadata
+	url = https://github.com/nilmtk/nilm_metadata

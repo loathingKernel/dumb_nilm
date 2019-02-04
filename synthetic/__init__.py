@@ -1,1 +1,1 @@
-from synthetic.generate import generate_dataset, convert_metadata
+from .generate_synthetic import generate, convert_metadata

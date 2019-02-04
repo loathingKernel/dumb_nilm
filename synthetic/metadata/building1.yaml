@@ -1,5 +1,5 @@
 instance: 1
-original_name: Patras Virtual High School
+original_name: Patras Experimental High School
 elec_meters:
   1:
     site_meter: true
@@ -79,26 +79,30 @@ appliances:
   instance: 1
   meters: [10]
   count: 12
+  control: manual
   # Meter 2
 - type: linear fluorescent lamp
   instance: 2
   meters: [20]
   count: 12
+  control: manual
   # Meter 3
 - type: linear fluorescent lamp
   instance: 3
   meters: [30]
   count: 12
+  control: manual
 - type: linear fluorescent lamp
   instance: 4
   meters: [31]
   count: 12
+  control: manual
 
   # Meter 1
 - type: ethernet switch
   instance: 1
   meters: [11]
-  control: manual
+  control: always on
 
   # Meter 2
 - type: projector

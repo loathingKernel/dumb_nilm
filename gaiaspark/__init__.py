@@ -1,1 +1,1 @@
-from gaiaspark.download import download_gaiaspark, convert_metadata
+from .download_gaiaspark import download, convert_metadata

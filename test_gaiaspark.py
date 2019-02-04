@@ -1,9 +1,15 @@
-from __future__ import print_function, division
-import os
+#!/usr/bin/python
 
-# import gaiaspark
-# gaiaspark.download_gaiaspark(username, password, client_id, client_secret, name + ext)
-# gaiaspark.convert_metadata(name + ext)
+from __future__ import print_function, division
+import pdb
+import os
+import sys
+import warnings
+
+#import gaiaspark
+#import spark as sa
+#gaiaspark.download(sa.uname, sa.pword, sa.clid, sa.clsec, 'data/gaiaspark.h5')
+#gaiaspark.convert_metadata('data/gaiaspark.h5')
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -12,12 +18,12 @@ import time
 from matplotlib import rcParams
 import numpy as np
 from six import iteritems
-import warnings
 from datetime import datetime as DateTime
 from datetime import timezone
 import pytz
 
-warnings.filterwarnings('ignore')
+import pprint
+
 #%matplotlib inline
 
 rcParams['figure.figsize'] = (13, 6)
@@ -31,35 +37,54 @@ test = DataSet('data/gaiaspark.h5')
 building = 1
 
 train.set_window(end='2017-12-31')
-test.set_window(start='2017-10-1')
+#test.set_window(start='2017-10-1', end='2018-02-01')
+test.set_window(start='2017-11-13', end='2017-11-15')
 
 train_elec = train.buildings[1].elec
 test_elec = test.buildings[1].elec
 
-# co = combinatorial_optimisation.CombinatorialOptimisation()
-# co.import_model('data/synthetic3.mdl')
-# print(co.model)
-# print(co.state_combinations)
-#
-# os.remove('data/gaiaspark_out.h5')
-# os.mknod('data/gaiaspark_out.h5')
-# out = HDFDataStore('data/gaiaspark_out.h5')
-# co.disaggregate(test_elec.mains(), out)
+co = combinatorial_optimisation.CombinatorialOptimisation()
+co.import_model('data/synthetic3.mdl')
+pprint.pprint(co.model)
+pprint.pprint(co.state_combinations)
+outfile = 'data/gaiaspark_out_2.h5'
 
-out = DataSet('data/gaiaspark_out.h5')
+if os.path.isfile(outfile):
+    os.remove(outfile)
+
+os.mknod(outfile)
+out = HDFDataStore(outfile)
+#warnings.simplefilter('error')
+#warnings.simplefilter('ignore', UserWarning)
+#warnings.simplefilter('ignore', DeprecationWarning)
+#warnings.simplefilter('ignore', RuntimeWarning)
+co.disaggregate(test_elec.mains()[3], out)
+
+out = DataSet(outfile)
 out_elec = out.buildings[1].elec
 
 # train_elec.plot()
-# test_elec.mains().plot()
+#plt.subplot(5, 2, 1)
+test_elec.mains().plot()
 
-test_elec.mains()[1].plot()
-# test_elec.mains()[2].plot()
-# test_elec.mains()[3].plot()
-out_elec['linear fluorescent lamp'].plot()
-out_elec['computer'].plot()
-out_elec['ethernet switch'].plot()
+#plt.subplot(5, 2, 2)
+#test_elec.mains()[1].plot()
+out_elec['linear fluorescent lamp', 1].plot()
+#for i in range(2, 8):
+#plt.subplot(5, 2, 1 + i)
+#out_elec['computer', i].plot()
+
+#plt.subplot(5, 2, 9)
+#out_elec['ethernet switch', 1].plot()
+
+#test_elec.mains()[2].plot()
+# out_elec['linear fluorescent lamp', 2].plot()
 # out_elec['projector'].plot()
+# out_elec['computer', 1].plot()
 
+#test_elec.mains()[3].plot()
+#for i in range(3, 4):
+#out_elec['linear fluorescent lamp', i].plot()
 
 # test1 = pd.read_hdf('gaia_sparkworks.h5', '/building1/elec/meter1', mode='r')
 # test1.plot()

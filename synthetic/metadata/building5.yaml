@@ -1,0 +1,421 @@
+instance: 5
+original_name: 46ο Δημοτικό Σχολείο Πατρών
+building_type: academic
+uri: 0013a200409c1683
+
+elec_meters:
+  1:
+    site_meter: true
+    device_model: base_elec
+    data_location: /building5/elec/meter1
+    uri: 0xfe7
+  2:
+    site_meter: true
+    device_model: base_elec
+    data_location: /building5/elec/meter2
+    uri: 0xfe7
+  3:
+    site_meter: true
+    device_model: base_elec
+    data_location: /building5/elec/meter3
+    uri: 0xfe7
+
+rooms:
+  - name: classroom
+    instance: 1
+    floor: 0
+    description: Αίθουσα 1
+  - name: classroom
+    instance: 2
+    floor: 0
+    description: Αίθουσα 2
+  - name: classroom
+    instance: 3
+    floor: 0
+    description: Αίθουσα 3
+  - name: classroom
+    instance: 4
+    floor: 0
+    description: Αίθουσα 4
+  - name: classroom
+    instance: 5
+    floor: 0
+    description: Αίθουσα 5
+  - name: classroom
+    instance: 6
+    floor: 0
+    description: Αίθουσα 6
+  - name: classroom
+    instance: 7
+    floor: 0
+    description: Αίθουσα 7α
+  - name: classroom
+    instance: 8
+    floor: 0
+    description: Αίθουσα 7β
+  - name: classroom
+    instance: 9
+    floor: 0
+    description: Αίθουσα 8
+  - name: classroom
+    instance: 10
+    floor: 0
+    description: Αίθουσα 9
+  - name: classroom
+    instance: 11
+    floor: 0
+    description: Αίθουσα Η/Υ
+  - name: classroom
+    instance: 12
+    floor: 0
+    description: Προκατ 1
+  - name: classroom
+    instance: 13
+    floor: 0
+    description: Προκατ 2
+  - name: lounge
+    instance: 1
+    floor: 0
+    description: Γραφείο Δασκάλων
+  - name: hall
+    instance: 1
+    floor: 0
+    description: Διάδρομος 1
+  - name: hall
+    instance: 2
+    floor: 0
+    description: Διάδρομος 2
+  - name: hall
+    instance: 3
+    floor: 0
+    description: Διάδρομος 3
+  - name: bathroom
+    instance: 1
+    floor: 0
+    description: Τουαλέτες
+
+appliances:
+  # classroom 1
+  - type: linear fluorescent lamp
+    instance: 1
+    meters: [0]
+    room: classroom,1
+    multiple: true
+    count: 12
+    control: manual
+  # classroom 2
+  - type: linear fluorescent lamp
+    instance: 2
+    meters: [0]
+    room: classroom,2
+    multiple: true
+    count: 18
+    control: manual
+  # classroom 3
+  - type: linear fluorescent lamp
+    instance: 3
+    meters: [0]
+    room: classroom,3
+    multiple: true
+    count: 18
+    control: manual
+  # classroom 4
+  - type: linear fluorescent lamp
+    instance: 4
+    meters: [0]
+    room: classroom,4
+    multiple: true
+    count: 18
+    control: manual
+  # classroom 5
+  - type: linear fluorescent lamp
+    instance: 5
+    meters: [0]
+    room: classroom,5
+    multiple: true
+    count: 18
+    control: manual
+  # classroom 6
+  - type: linear fluorescent lamp
+    instance: 6
+    meters: [0]
+    room: classroom,6
+    multiple: true
+    count: 18
+    control: manual
+  # classroom 7
+  - type: linear fluorescent lamp
+    instance: 7
+    meters: [0]
+    room: classroom,7
+    multiple: true
+    count: 12
+    control: manual
+  - type: fan
+    subtype: ceiling
+    instance: 1
+    meters: [0]
+    room: classroom,7
+    control: manual
+  # classroom 8
+  - type: linear fluorescent lamp
+    instance: 8
+    meters: [0]
+    room: classroom,8
+    multiple: true
+    count: 12
+    control: manual
+  - type: fan
+    subtype: ceiling
+    instance: 2
+    meters: [0]
+    room: classroom,8
+    control: manual
+  - type: ethernet switch
+    subtype: 1gigabit
+    instance: 1
+    meters: [0]
+    room: classroom,8
+    control: always on
+  - type: broadband router
+    instance: 1
+    meters: [0]
+    room: classroom,8
+    control: always on
+  # classroom 9
+  - type: linear fluorescent lamp
+    instance: 9
+    meters: [0]
+    room: classroom,9
+    multiple: true
+    count: 16
+    control: manual
+  - type: fan
+    subtype: ceiling
+    instance: 3
+    meters: [0]
+    room: classroom,9
+    control: manual
+  # classroom 10
+  - type: linear fluorescent lamp
+    instance: 10
+    meters: [0]
+    room: classroom,10
+    multiple: true
+    count: 36
+    control: manual
+  - type: fan
+    subtype: ceiling
+    instance: 4
+    meters: [0]
+    room: classroom,10
+    control: manual
+  # classroom 11
+  - type: computer
+    instance: 1
+    meters: [0]
+    room: classroom,11
+    multiple: true
+    count: 13
+    components:
+        - type: desktop computer
+        meters: [0]
+        - type: computer monitor
+        meters: [0]
+    control: manual
+  - type: projector
+    instance: 1
+    meters: [0]
+    room: classroom,11
+    control: manual
+  - type: ethernet switch
+    subtype: 1gigabit
+    instance: 2
+    meters: [0]
+    room: classroom,11
+  - type: air conditioner
+    instance: 1
+    meters: [0]
+    room: classroom,11
+    control: manual
+
+  # classroom 12
+  - type: linear fluorescent light
+    instance: 12
+    meters: [0]
+    room: classroom,12
+    multiple: true
+    count: 12
+    control: manual
+
+  - type: air conditioner
+    instance: 2
+    meters: [0]
+    room: classroom,12
+    control: [manual, thermostat]
+
+  - type: electric space heater
+    instance: 1
+    meters: [0]
+    room: classroom,12
+    multiple: true
+    count: 3
+    control: [manual, thermostat]
+
+  # classroom 13
+  - type: linear fluorescent light
+    instance: 13
+    meters: [0]
+    room: classroom,13
+    multiple: true
+    count: 12
+    control: manual
+
+  - type: air conditioner
+    instance: 3
+    meters: [0]
+    room: classroom,13
+    multiple: true
+    count: 2
+    control: [manual, thermostat]
+
+  # lounge
+  - type: linear fluorescent light
+    instance: 14
+    meters: [0]
+    room: lounge
+    multiple: true
+    count: 24
+    control: manual
+
+  - type: air conditioner
+    instance: 4
+    meters: [0]
+    room: lounge
+    control: [manual, thermostat]
+
+  - type: fridge freezer
+    subtype: fridge on bottom
+    instance: 1
+    meters: [0]
+    room: lounge
+
+  - type: computer
+    instance: 2
+    meters: [0]
+    room: lounge
+    multiple: true
+    count: 3
+    components:
+        - type: desktop computer
+        meters: [0]
+        - type: computer monitor
+        meters: [0]
+    control: manual
+
+  - type: photocopier
+    instance: 1
+    meters: [0]
+    room: lounge
+    multiple: true
+    count: 3
+    control: manual
+
+  - type: fax
+    instance: 1
+    meters: [0]
+    room: lounge
+    control: manual
+
+  - type: coffee maker
+    instance: 1
+    meters: [0]
+    room: lounge
+    control: manual
+
+  - type: projector
+    instance: 2
+    meters: [0]
+    room: lounge
+    multiple: true
+    count: 2
+    control: manual
+
+  - type: laptop conputer
+    instance: 1
+    meters: [0]
+    room: lounge
+    control: manual
+
+  # hall 1
+  - type: linear fluorescent light
+    instance: 15
+    meters: [0]
+    room: hall,1
+    multiple: true
+    count: 6
+    control: manual
+
+  - type: fridge
+    instance: 1
+    meters: [0]
+    room: hall,1
+
+  - type: electric oven
+    instance: 1
+    meters: [0]
+    room: hall,1
+    multiple: true
+    count: 2
+    control: manual
+
+  # hall 2
+  - type: linear fluorescent light
+    instance: 16
+    meters: [0]
+    room: hall, 2
+    multiple: true
+    count: 20
+    control: manual
+
+  - type: linear fluorescent light
+    instance: 17
+    meters: [0]
+    room: hall, 2
+    multiple: true
+    count: 2
+    control: manual
+
+  - type: incandescent lamp
+    instance: 1
+    meters: [0]
+    room: hall,2
+    multiple: true
+    count: 4
+    control: manual
+
+  - type: active speaker
+    instance: 1
+    meters: [0]
+    room: hall,2
+    multiple: true
+    count: 4
+    control: manual
+
+  # hall 3
+  - type: linear fluorescent light
+    instance: 18
+    meters: [0]
+    room: hall,2
+    multiple: true
+    count: 12
+    control: manual
+
+  # bathroom
+  - type: incandescent lamp
+    instance: 2
+    meters: [0]
+    room: bathroom
+    multiple: true
+    count: 16
+    control: manual

@@ -15,6 +15,7 @@ class SparkWorks:
     DEV_CONST_LORA = "dragino-"
     SELECTION_DEPTH = 1
     SELECTION_DEPTH_MAX = 10
+    SELECTION_PHASES = 3
 
     __api_url = "https://api.sparkworks.net"
     __sso_url = "https://sso.sparkworks.net/aa/oauth/token"
@@ -72,6 +73,21 @@ class SparkWorks:
     def subGroups(self, group_uuid, depth=SELECTION_DEPTH):
         response = self.apiGetAuthorized('/v2/group/' + group_uuid + '/subgroup/' + str(depth))
         return response.json()
+
+    def select_room(self, group_uuid, room_name, max_depth=SELECTION_DEPTH_MAX):
+        _room = None
+        _depth = self.SELECTION_DEPTH
+        room_name = room_name.decode('utf-8').strip()
+        while _room is None:
+            _subgroups = self.subGroups(group_uuid, _depth)
+            _depth += 1
+            for _subgroup in _subgroups:
+                # Strip group name and replace it for match and sort to work on malformed group names
+                _subgroup[self.NAME_CONST] = _subgroup[self.NAME_CONST].strip()
+                _is_match = _subgroup[self.NAME_CONST] == room_name
+                if _is_match:
+                    _room = _subgroup
+        return _room
 
     def select_rooms(self, group_uuid, room_names, max_depth=SELECTION_DEPTH_MAX, sort=True):
         _rooms = []
@@ -166,9 +182,10 @@ class SparkWorks:
         _resources = self.groupResources(group_uuid)
         _groupResources = []
         for _resource in _resources:
-            _is_lora = _resource[self.SYSTEM_NAME_CONST].startswith(self.DEV_CONST_LORA)
+            _is_rpi = _resource[self.SYSTEM_NAME_CONST].startswith(self.GAIA_CONST)
             _is_xbee = _resource[self.SYSTEM_NAME_CONST].startswith(self.DEV_CONST_XBEE)
-            if _is_lora or _is_xbee:
+            _is_lora = _resource[self.SYSTEM_NAME_CONST].startswith(self.DEV_CONST_LORA)
+            if _is_rpi or _is_xbee or _is_lora:
                 _groupResources.append(_resource)
         return _groupResources
 
@@ -238,12 +255,42 @@ class SparkWorks:
             if _resource[self.SYSTEM_NAME_CONST].startswith(self.SITE_PREFIX_CONST):
                 return _resource
 
+    def select_power_meter(self, group_uuid, room_name, phases_max=SELECTION_PHASES):
+        _phases = []
+        _groups = self.subGroups(group_uuid, self.SELECTION_DEPTH_MAX)
+        _groups.append(self.group(group_uuid))
+        _room = self.select_room(group_uuid, room_name)
+        _group = _room
+        while not _phases:
+            _phases = self.current_phases(_group['uuid'])
+            if _group['uuid'] == group_uuid:
+                if len(_phases) > phases_max:
+                    _phases = []
+                break
+            for _g in _groups:
+                if _group['parentPath'] == _g['path']:
+                    _group = _g
+                    break
+        return _room, _phases
+
     def latest(self, resource_uuid):
         response = self.apiGetAuthorized('/v2/resource/' + resource_uuid + '/latest')
         return response.json()
 
     def summary(self, resource_uuid):
         response = self.apiGetAuthorized('/v2/resource/' + resource_uuid + '/summary')
+        return response.json()
+
+    def timerange(self, resource_uuid, start_date, end_date, granularity="5min"):
+        _queries = {"queries": []}
+        for uuid in resource_uuid:
+            _query = {"from": start_date.timestamp()*1000,
+                      "to": end_date.timestamp()*1000,
+                      "resourceUuid": resource_uuid,
+                      "resultLimit": None,
+                      "granularity": granularity}
+            _queries["queries"].append(_query)
+        response = self.apiPostAuthorized('/v2/resource/query/timerange', _queries)
         return response.json()
 
     def resourceBySystemName(self, system_name):

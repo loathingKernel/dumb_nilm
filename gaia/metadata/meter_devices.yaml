@@ -1,7 +1,6 @@
 base_elec: &elecmeter
   measurements:
   - physical_quantity: current
-    uri: cur
     upper_limit: 35
     lower_limit: 0
   wireless: true
@@ -21,15 +20,10 @@ avg_elec:
 base_env: &envmeter
   measurements:
   - physical_quantity: sound
-    uri: sound
   - physical_quantity: luminosity
-    uri: light
   - physical_quantity: motion
-    uri: pir
   - physical_quantity: temperature
-    uri: temp
   - physical_quantity: humidity
-    uri: humid
   wireless: true
 
 raw_env:

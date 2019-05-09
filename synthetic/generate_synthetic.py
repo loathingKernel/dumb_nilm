@@ -1,9 +1,9 @@
+import os
+import sys
 # import time
 from copy import deepcopy
 from datetime import datetime as DateTime, timedelta as TimeDelta
 from inspect import currentframe, getfile, getsourcefile
-from os import getcwd
-from os.path import join, isdir, dirname, abspath
 from random import SystemRandom
 from sys import getfilesystemencoding
 
@@ -12,7 +12,7 @@ import pytz
 # import numpy as np
 # import requests
 import yaml
-from nilm_metadata import convert_yaml_to_hdf5
+import nilm_metadata
 # from dateutil.relativedelta import relativedelta
 from nilmtk.measurement import LEVEL_NAMES
 from pkg_resources import resource_filename
@@ -75,7 +75,7 @@ def generate(hdf_filename):
 
 
 def convert_metadata(hdf_filename):
-    convert_yaml_to_hdf5(join(_get_module_directory(), 'metadata'), hdf_filename)
+    nilm_metadata.convert_yaml_to_hdf5(os.path.join(_get_module_directory(), 'metadata'), hdf_filename)
 
 
 def _write_hdf5(dataset, building, data, meter, filename):
@@ -99,7 +99,7 @@ def _get_module_directory():
     if not isdir(path_to_this_file):
         abspath(getsourcefile(lambda _: None))
     if not isdir(path_to_this_file):
-        path_to_this_file = getcwd()
+        path_to_this_file = os.getcwd()
     assert isdir(path_to_this_file), path_to_this_file + ' is not a directory'
     return path_to_this_file
 

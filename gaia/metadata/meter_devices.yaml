@@ -1,20 +1,8 @@
-base_net: &netmeter
-  - physical_quantity: node_voltage
-  - physical_quantity: node_rssi
-  - physical_quantity: gateway_rssi
-  - physical_quantity: messages
-  - physical_quantity: retransmissions
-  - physical_quantity: publications
-  - physical_quantity: invalid_packets
-  - physical_quantity: crc_errors
-  - physical_quantity: polling_cycles
-
 base_elec: &elecmeter
   measurements:
   - physical_quantity: current
     upper_limit: 35
     lower_limit: 0
-  <<: *netmeter
   wireless: true
 
 raw_elec:
@@ -49,3 +37,28 @@ avg_env:
   sample_period: 300
   max_sample_period: 1200
   <<: *envmeter
+
+base_net: &netmeter
+  measurements:
+  - physical_quantity: node_voltage
+  - physical_quantity: node_rssi
+  - physical_quantity: gateway_rssi
+  - physical_quantity: messages
+  - physical_quantity: retransmissions
+  - physical_quantity: publications
+  - physical_quantity: invalid_packets
+  - physical_quantity: crc_errors
+  - physical_quantity: polling_cycles
+  wireless: true
+
+raw_net:
+  model: GAIA Project sensor network QoS sensors
+  sample_period: 30
+  max_sample_period: 90
+  <<: *netmeter
+
+avg_net:
+  model: GAIA Project 5 minute sensor network QoS averages
+  sample_period: 300
+  max_sample_period: 1200
+  <<: *netmeter

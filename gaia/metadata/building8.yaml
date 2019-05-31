@@ -1,0 +1,223 @@
+instance: 8
+original_name: 1ο Εργαστηριακό Κέντρο Πατρών
+building_type: academic
+uri: 0013a20040a1d88c
+
+elec_meters:
+  1:
+    site_meter: false
+    room: classroom,3
+    device_model: base_elec
+    data_location: /building2/elec/meter1
+    uri: 0xd12
+  2:
+    site_meter: false
+    room: classroom,3
+    device_model: base_elec
+    data_location: /building2/elec/meter2
+    uri: 0xd12
+  3:
+    site_meter: false
+    room: classroom,3
+    device_model: base_elec
+    data_location: /building2/elec/meter3
+    uri: 0xd12
+
+env_meters:
+  1:
+    site_meter: false
+    room: classroom,1
+    device_model: base_env
+    data_location: /building2/env/meter1
+    uri: 0x694
+  2:
+    site_meter: false
+    room: classroom,2
+    device_model: base_env
+    data_location: /building2/env/meter2
+    uri: 0x4f3
+  3:
+    site_meter: false
+    room: classroom,3
+    device_model: base_env
+    data_location: /building2/env/meter3
+    uri: 0xde1
+
+rooms:
+  - name: classroom
+    instance: 1
+    floor: 1
+    description: Αίθουσα Α10
+  - name: classroom
+    instance: 2
+    floor: 1
+    description: Αίθουσα Α11
+  - name: classroom
+    instance: 3
+    floor: 1
+    description: Αίθουσα Α2
+
+appliances:
+  - type: computer
+    instance: 1
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 2
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 3
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 4
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 5
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 6
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 7
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 8
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 9
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 10
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 11
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 12
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: computer
+    instance: 13
+    meters: [1]
+    components:
+      - type: desktop computer
+        meters: [1]
+      - type: computer monitor
+        components:
+          - type: CRT screen
+        meters: [1]
+    control: manual
+
+  - type: air conditioner
+    instance: 1
+    meters: [0]
+
+  - type: air conditioner
+    instance: 2
+    meters: [0]

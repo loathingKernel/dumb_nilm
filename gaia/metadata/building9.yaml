@@ -1,0 +1,22 @@
+instance: 9
+original_name: 8ο Γυμνάσιο Πατρών
+building_type: academic
+
+elec_meters:
+  1:
+    site_meter: true
+    device_model:
+    data_location: /building3/elec/meter1
+    meter_uri: 0013a20040b34d22/0x6dd/cur/1
+  2:
+    site_meter: true
+    device_model:
+    data_location: /building3/elec/meter2
+    meter_uri: 0013a20040b34d22/0x6dd/cur/2
+  3:
+    site_meter: true
+    device_model:
+    data_location: /building3/elec/meter3
+    meter_uri: 0013a20040b34d22/0x6dd/cur/3
+
+appliances:

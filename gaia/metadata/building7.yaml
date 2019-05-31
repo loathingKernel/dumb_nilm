@@ -1,0 +1,131 @@
+instance: 7
+original_name: Πειραματικό Γυμνάσιο Πατρών
+building_type: academic
+uuid: 107beec7-859b-4d49-8da7-fbccd39188db
+
+elec_meters:
+  1:
+    site_meter: true
+    device_model:
+    data_location: /building1/elec/meter1
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  2:
+    site_meter: true
+    device_model:
+    data_location: /building1/elec/meter2
+    uuid: bc0a62bf-37a6-4cb7-9321-84d6d431fc93
+  3:
+    site_meter: true
+    device_model:
+    data_location: /building1/elec/meter3
+    uuid: 9ef21fc3-2bf0-4743-ba16-da5a56b48af5
+
+appliances:
+# Building appliances
+  # Meter 1
+- type: linear fluorescent lamp
+  instance: 1
+  meters: [1]
+  count: 12
+  control: manual
+  # Meter 2
+- type: linear fluorescent lamp
+  instance: 2
+  meters: [2]
+  count: 12
+  control: manual
+  # Meter 3
+- type: linear fluorescent lamp
+  instance: 3
+  meters: [3]
+  count: 12
+  control: manual
+- type: linear fluorescent lamp
+  instance: 4
+  meters: [3]
+  count: 12
+  control: manual
+  # Meter 1
+- type: ethernet switch
+  instance: 1
+  meters: [1]
+  control: always on
+  # Meter 2
+- type: projector
+  instance: 1
+  meters: [2]
+  control: manual
+  # Meter 2
+- type: computer
+  instance: 1
+  meters: [2]
+  components:
+    - type: desktop computer
+      meters: [2]
+    - type: computer monitor
+      meters: [2]
+  control: manual
+  # Meter 1
+- type: computer
+  instance: 2
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual
+- type: computer
+  instance: 3
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual
+- type: computer
+  instance: 4
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual
+- type: computer
+  instance: 5
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual
+- type: computer
+  instance: 6
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual
+- type: computer
+  instance: 7
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual
+- type: computer
+  instance: 8
+  meters: [1]
+  components:
+    - type: desktop computer
+      meters: [1]
+    - type: computer monitor
+      meters: [1]
+  control: manual

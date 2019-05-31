@@ -1,23 +1,23 @@
-base_elec: &elecmeter
+elec_base: &elecmeter
   measurements:
   - physical_quantity: current
     upper_limit: 35
     lower_limit: 0
   wireless: true
 
-raw_elec:
+elec_raw:
   model: GAIA Project electrical sensors
   sample_period: 30
   max_sample_period: 90
   <<: *elecmeter
 
-avg_elec:
+elec_avg:
   model: GAIA Project 5 minute electrical averages
   sample_period: 300
   max_sample_period: 1200
   <<: *elecmeter
 
-base_env: &envmeter
+env_base: &envmeter
   measurements:
   - physical_quantity: sound
   - physical_quantity: luminosity
@@ -26,21 +26,21 @@ base_env: &envmeter
   - physical_quantity: humidity
   wireless: true
 
-raw_env:
+env_raw:
   model: GAIA Project enviromental sensors
   sample_period: 30
   max_sample_period: 90
   <<: *envmeter
 
-avg_env:
+env_avg:
   model: GAIA Project 5 minute enviromental averages
   sample_period: 300
   max_sample_period: 1200
   <<: *envmeter
 
-base_net: &netmeter
+net_base: &netmeter
   measurements:
-  - physical_quantity: node_voltage
+  - physical_quantity: node_vcc
   - physical_quantity: node_rssi
   - physical_quantity: gateway_rssi
   - physical_quantity: messages
@@ -51,14 +51,37 @@ base_net: &netmeter
   - physical_quantity: polling_cycles
   wireless: true
 
-raw_net:
+net_raw:
   model: GAIA Project sensor network QoS sensors
   sample_period: 30
   max_sample_period: 90
   <<: *netmeter
 
-avg_net:
+net_avg:
   model: GAIA Project 5 minute sensor network QoS averages
   sample_period: 300
   max_sample_period: 1200
   <<: *netmeter
+
+meteo_drksk:
+  model: Dark Sky meteorogical data
+  sample_period: 600
+  max_sample_period: 6000
+  measurements:
+  - physical_quantity: apparentTemperature
+  - physical_quantity: cloudCover
+  - physical_quantity: dewPoint
+  - physical_quantity: humidity
+  - physical_quantity: icon
+  - physical_quantity: ozone
+  - physical_quantity: precipIntensity
+  - physical_quantity: precipProbability
+  - physical_quantity: precipType
+  - physical_quantity: pressure
+  - physical_quantity: summary
+  - physical_quantity: temperature
+  - physical_quantity: uvIndex
+  - physical_quantity: visibility
+  - physical_quantity: windBearing
+  - physical_quantity: windGust
+  - physical_quantity: windSpeed

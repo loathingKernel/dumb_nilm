@@ -373,7 +373,7 @@ appliances:
   - type: linear fluorescent light
     instance: 16
     meters: [0]
-    room: hall, 2
+    room: hall,2
     multiple: true
     count: 20
     control: manual
@@ -381,7 +381,7 @@ appliances:
   - type: linear fluorescent light
     instance: 17
     meters: [0]
-    room: hall, 2
+    room: hall,2
     multiple: true
     count: 2
     control: manual

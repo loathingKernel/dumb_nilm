@@ -1,22 +1,97 @@
 instance: 3
-original_name: 8ο Γυμνάσιο Πατρών
+original_name: Πρότυπο Πειραματικό Δημοτικό Πανεπιστημίου Πατρών
 building_type: academic
+uuid: 107beec7-859b-4d49-8da7-fbccd39188db
 
 elec_meters:
   1:
     site_meter: true
     device_model:
-    data_location: /building3/elec/meter1
-    meter_uri: 0013a20040b34d22/0x6dd/cur/1
+    data_location: /building1/elec/meter1
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
   2:
     site_meter: true
     device_model:
-    data_location: /building3/elec/meter2
-    meter_uri: 0013a20040b34d22/0x6dd/cur/2
+    data_location: /building1/elec/meter2
+    uuid: bc0a62bf-37a6-4cb7-9321-84d6d431fc93
   3:
     site_meter: true
     device_model:
-    data_location: /building3/elec/meter3
-    meter_uri: 0013a20040b34d22/0x6dd/cur/3
+    data_location: /building1/elec/meter3
+    uuid: 9ef21fc3-2bf0-4743-ba16-da5a56b48af5
+  4:
+    site_meter: true
+    device_model:
+    data_location: /building1/elec/meter1
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  5:
+    site_meter: true
+    device_model:
+    data_location: /building1/elec/meter2
+    uuid: bc0a62bf-37a6-4cb7-9321-84d6d431fc93
+  6:
+    site_meter: true
+    device_model:
+    data_location: /building1/elec/meter3
+    uuid: 9ef21fc3-2bf0-4743-ba16-da5a56b48af5
 
-appliances:
+env_meters:
+  1:
+    site_meter: false
+    device_model:
+    data_location: /building1/env/meter1
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  2:
+    site_meter: false
+    device_model:
+    data_location: /building1/env/meter2
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  3:
+    site_meter: false
+    device_model:
+    data_location: /building1/env/meter3
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  4:
+    site_meter: false
+    device_model:
+    data_location: /building1/env/meter4
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+
+net_meters:
+  1:
+    site_meter: false
+    device_model:
+    data_location: /building1/net/meter1
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  2:
+    site_meter: false
+    device_model:
+    data_location: /building1/net/meter2
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  3:
+    site_meter: false
+    device_model:
+    data_location: /building1/net/meter3
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  4:
+    site_meter: false
+    device_model:
+    data_location: /building1/net/meter4
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  5:
+    site_meter: false
+    device_model:
+    data_location: /building1/net/meter5
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+  6:
+    site_meter: false
+    device_model:
+    data_location: /building1/net/meter6
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+
+wthr_meters:
+  1:
+    site_meter: false
+    device_model:
+    data_location: /building1/wthr/meter1
+    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2

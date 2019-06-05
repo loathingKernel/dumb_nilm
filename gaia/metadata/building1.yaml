@@ -1,117 +1,254 @@
 instance: 1
 original_name: Πρότυπο Πειραματικό Λύκειο Πανεπιστημίου Πατρών
 building_type: academic
-uuid: 107beec7-859b-4d49-8da7-fbccd39188db
+uuid: 3bf1856a-1a61-4db1-a40a-dd217116370f
 
 elec_meters:
   1:
     site_meter: true
-    device_model:
+    device_model: elec_avg
     data_location: /building1/elec/meter1
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      current: 54e80398-8520-49f5-9753-5ad86ecffb67
   2:
     site_meter: true
-    device_model:
+    device_model: elec_avg
     data_location: /building1/elec/meter2
-    uuid: bc0a62bf-37a6-4cb7-9321-84d6d431fc93
+    uuid:
+      current: a23dd98d-1dee-463e-96d5-468734d4936c
   3:
     site_meter: true
-    device_model:
+    device_model: elec_avg
     data_location: /building1/elec/meter3
-    uuid: 9ef21fc3-2bf0-4743-ba16-da5a56b48af5
+    uuid:
+      current: 7f9c0248-bd7f-4d36-965f-9007efc71823
   4:
     site_meter: true
-    device_model:
+    device_model: elec_avg
     data_location: /building1/elec/meter1
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      current: 2f85e206-bb03-40a0-ab53-25c9e4b4bb6d
   5:
     site_meter: true
-    device_model:
+    device_model: elec_avg
     data_location: /building1/elec/meter2
-    uuid: bc0a62bf-37a6-4cb7-9321-84d6d431fc93
+    uuid:
+      current: 02f274d9-ce98-41db-8396-229466fdf924
   6:
     site_meter: true
-    device_model:
+    device_model: elec_avg
     data_location: /building1/elec/meter3
-    uuid: 9ef21fc3-2bf0-4743-ba16-da5a56b48af5
+    uuid:
+      current: d05c37b1-93aa-4856-bf71-3cea43c20ee5
 
 env_meters:
   1:
     site_meter: false
-    device_model:
+    device_model: env_avg
     data_location: /building1/env/meter1
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      sound: da67759f-2fbf-4d7b-a575-f9244e46ce7f
+      luminosity: 85de6add-645c-432b-8e1e-ab52adddf565
+      motion: b39842ff-b025-4fad-ba50-ce0689d4aa55
+      temperature: 51dd9ad7-6a04-486d-b3c3-ac8779d124f5
+      humidity: 926d5ac8-ef7b-4e3a-a6de-ea4420440de9
   2:
     site_meter: false
-    device_model:
+    device_model: env_avg
     data_location: /building1/env/meter2
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      sound: cac19075-e249-4225-9029-803103092e79
+      luminosity: b369a5e6-8988-4b3a-b250-06bed24bdc5b
+      motion: d9a0786c-518a-45b3-9441-2b157faa0a11
+      temperature: e304dd45-b295-417c-b360-88732aa9918b
+      humidity: 014e41ed-c6f3-4562-818e-ccdd58521a7b
   3:
     site_meter: false
-    device_model:
+    device_model: env_avg
     data_location: /building1/env/meter3
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      sound: 4811b612-af7c-4ff9-8c8a-27c71a6b0183
+      luminosity: 2975898e-b19a-40e8-9bab-604fd84c6aa8
+      motion: 5174d7f3-c470-4f5a-a422-5423cfe6f54a
+      temperature: e47574f6-3063-4fb5-9c10-18fd10660fa7
+      humidity: 41d46226-e5f1-4a87-a198-0cd5afcc33f7
   4:
     site_meter: false
-    device_model:
+    device_model: env_avg
     data_location: /building1/env/meter4
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      sound: a12e5980-f1ed-4237-9768-3d9d77675b48
+      luminosity: baf0947d-cf31-4236-a330-cfd3a015e3e7
+      motion: 39e6c8ae-4d5f-4ae4-b409-61185afbb5e1
+      temperature: 5c10adcc-e274-490b-8534-89c5c06c53c3
+      humidity: 88714122-7ae9-4deb-9d12-a3f3b8d4a65c
   5:
     site_meter: false
-    device_model:
+    device_model: env_avg
     data_location: /building1/env/meter5
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      sound: 1839d002-b4b8-4ab6-8f63-c30eb90cedb2
+      luminosity: 0e912439-7302-43f7-9414-31bd60eda9c6
+      motion: 020e377e-0ffc-4625-8532-2661adf8c611
+      temperature: 3001966c-1348-49b3-b914-23cc0abe270f
+      humidity: de6f47ce-dc07-4e85-b7f3-d08c42961a7c
   6:
     site_meter: false
-    device_model:
+    device_model: env_avg
     data_location: /building1/env/meter6
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      sound: 838c680a-c6e9-4cd5-8e2b-08a813704d62
+      luminosity: 440c2eab-2596-4c0a-b378-d1019df8e5a9
+      motion: 9ce44a1f-86aa-45e7-8857-4aece21b9dc9
+      temperature: 5ed8c628-f839-45cf-9981-6191e82de2c3
+      humidity: 5d7e8226-b678-478e-b975-10ba2c35c5d3
 
 net_meters:
   1:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter1
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: 556f9f39-6729-4c1c-a271-7935ee729841
+      node_rssi: 851f1124-6303-4620-bc53-1e89f7e14b76
+      node_snr:
+      gateway_rssi: b7bada39-cd35-486d-9d10-dd5ba8dd5252
+      gateway_snr:
+      messages: 9c4eb185-fb3a-44c3-8de1-b47aef0ceb4a
+      retransmissions: b77aca5d-078e-495f-a141-050e798d9d1f
+      publications: b18713ea-dcb7-4c45-b21c-5aa7734d97a5
+      invalid_packets: 4e5a1516-6deb-41ac-abbe-fdd817ea6ac1
+      crc_errors: 4f6bf45d-77a2-4c43-af8a-ae53a7664eb7
+      polling_cycles: ff7cbabd-6298-491c-a796-8e843cd7fb8b
+      payload:
   2:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter2
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: 145dc4b3-2839-42a0-8012-d90091ad69c6
+      node_rssi: 1b73db29-4988-43ff-baed-8424f2bc717e
+      node_snr:
+      gateway_rssi: 5257be87-4e50-45e5-b8e5-8b8f3ede980f
+      gateway_snr:
+      messages: c27c7813-28eb-49a9-886c-8314567fcf90
+      retransmissions: 8af01baa-5579-4353-ab33-7de07afe54bd
+      publications: 1dc663e9-9988-4c5c-a0ea-25fcd08adb8d
+      invalid_packets: 698dd51a-68a5-441f-91d2-42088fb5498a
+      crc_errors: 9b1ee27e-5fb9-4062-8fc7-619f4628a17c
+      polling_cycles: 4fe01098-2292-4628-a2f0-994010189ace
+      payload:
   3:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter3
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: 739eeaf8-37b8-4d26-ade4-d8699f97c2bf
+      node_rssi: 0f66a746-2ce1-4e3a-aa58-d0c8f3a6646c
+      node_snr:
+      gateway_rssi: 0d58c7be-273e-4e23-881c-f0e06a89c5dc
+      gateway_snr:
+      messages: f03faa19-efa7-43ec-84f5-1a80f9204fad
+      retransmissions: 15f59f96-eacb-4de7-9940-41686c0ff4fd
+      publications: bdc629dd-204b-4a6b-a506-cdedc6442c62
+      invalid_packets: 20dbf777-3314-41f3-aa29-2ff57528cc3a
+      crc_errors: 1844f94f-f6b7-4187-a1b7-c6b6d2597545
+      polling_cycles: 1a9e19b3-bbfc-450d-9ab4-39f825742bf0
+      payload:
   4:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter4
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: e7bec854-b306-4ed8-b2d4-d2f62143e2c2
+      node_rssi: e8e16d38-c114-49ad-b0c6-8f8ae4c514a6
+      node_snr:
+      gateway_rssi: 1ae19853-59e8-41be-bf97-a3f90cfc97c5
+      gateway_snr:
+      messages: 9249f083-2003-4ff2-bb0c-12d7f1e15419
+      retransmissions: c184be2d-ba2e-45ea-a023-0efec79c523e
+      publications: 3df281dc-f965-4b04-9b22-0e18ab9e735c
+      invalid_packets: 5035caac-3f7a-4b19-8c71-756618025d73
+      crc_errors: f81663e7-3c69-4349-a243-45075dc2edc0
+      polling_cycles: 6d37c50a-17cd-48f5-a314-b029f3400754
+      payload:
   5:
     site_meter: false
     device_model:
     data_location: /building1/net/meter5
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: b0e13c00-0750-471b-9f89-8b5379853787
+      node_rssi: 923d646c-a01d-4a07-aa48-50044348d8c0
+      node_snr:
+      gateway_rssi: 8b2ed28f-d23c-46c1-8e5a-e06df09b6cc1
+      gateway_snr:
+      messages: b34830e9-8f4a-4591-9c23-4596c5a1a0d9
+      retransmissions: eaa51816-845d-4b58-9e73-0d5eb179ff69
+      publications: 52f1f26b-f606-4f56-9151-d9ed76d0f77c
+      invalid_packets: 16a1935a-7ba2-489e-bbee-e66d0801bc8f
+      crc_errors: 2f872b57-bd56-4558-85ee-b79308de3c1e
+      polling_cycles: 77803a64-f927-42ad-aade-bf8de663532e
+      payload:
   6:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter6
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: 4e618ef3-dae5-40bf-b36e-6ae729858e9b
+      node_rssi: 70b7b428-e50b-45fc-b430-c19e59cbd484
+      node_snr:
+      gateway_rssi: 7ba19149-d78b-4786-be39-3220fcbb24cd
+      gateway_snr:
+      messages: e2f579fc-9724-4199-b7d9-577e8c459783
+      retransmissions: 4793c148-87c6-42c3-9f0e-25cef2a33676
+      publications: dc083976-e899-4440-aab9-0a27fe14e03d
+      invalid_packets: 3f26849e-3b84-4924-952d-4d1520d2720c
+      crc_errors: 895f4184-a55e-4e78-8dcb-58197e93464f
+      polling_cycles: 8ac7496f-a02a-4968-976a-fde169e4718b
+      payload:
   7:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter7
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: 79041977-cc16-4b33-b46b-9fd5bd1ebb91
+      node_rssi: 8bd8365c-3598-4331-a7fb-aabf04b830ac
+      node_snr:
+      gateway_rssi: 38db54ad-5757-40a8-9a41-e0c1ff70ce60
+      gateway_snr:
+      messages: 4e5a9319-e28d-4964-a80c-04580758296d
+      retransmissions: ac1e691a-cc48-43e9-ab23-84f30d576025
+      publications: 3ad6a0e5-4cf5-4195-80f9-0cd5c6903c3e
+      invalid_packets: cf603aa8-bf06-47fc-95f7-22dccafec9c5
+      crc_errors: 79cb18f8-3b84-40dd-b313-268dafa61425
+      polling_cycles: bbe931f3-459f-44be-b19a-ce9157ae5949
+      payload:
   8:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter8
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    uuid:
+      node_vcc: e95ad5d5-3476-42dc-8d7e-9e1b4c856024
+      node_rssi: 30225d27-a461-46da-985b-5b21ed1eb931
+      node_snr:
+      gateway_rssi: c4b3a6bd-7c7f-426b-81c3-ae81c215b4b3
+      gateway_snr:
+      messages: d2fe1187-2441-4495-b5ae-3adc5e067ff9
+      retransmissions: d409eeaa-1877-41d4-802f-639a431638fe
+      publications: d60c665b-499b-4fcd-9782-fb7a8fd6d212
+      invalid_packets: 68f26b92-67e3-4711-948a-875b2280ab30
+      crc_errors: 5614900f-a3f4-4ff4-940b-b420bb075a1f
+      polling_cycles: d58357ae-da41-4103-a36b-e820cbefb42b
+      payload:
 
 wthr_meters:
   1:
     site_meter: false
-    device_model:
+    device_model: meteo_drksk
     data_location: /building1/wthr/meter1
-    uuid: d9d2616b-dcac-43c0-bf9d-662c01c2e7a2
+    location:
+      latitude: 38.280549
+      longitude: 21.790787
+
+
+#kate: space-indent on; indent-width 2;

@@ -8,19 +8,19 @@ elec_meters:
     site_meter: false
     room: classroom,3
     device_model: base_elec
-    data_location: /building2/elec/meter1
+    data_location: /building8/elec/meter1
     uri: 0xd12
   2:
     site_meter: false
     room: classroom,3
     device_model: base_elec
-    data_location: /building2/elec/meter2
+    data_location: /building8/elec/meter2
     uri: 0xd12
   3:
     site_meter: false
     room: classroom,3
     device_model: base_elec
-    data_location: /building2/elec/meter3
+    data_location: /building8/elec/meter3
     uri: 0xd12
 
 env_meters:
@@ -28,19 +28,19 @@ env_meters:
     site_meter: false
     room: classroom,1
     device_model: base_env
-    data_location: /building2/env/meter1
+    data_location: /building8/env/meter1
     uri: 0x694
   2:
     site_meter: false
     room: classroom,2
     device_model: base_env
-    data_location: /building2/env/meter2
+    data_location: /building8/env/meter2
     uri: 0x4f3
   3:
     site_meter: false
     room: classroom,3
     device_model: base_env
-    data_location: /building2/env/meter3
+    data_location: /building8/env/meter3
     uri: 0xde1
 
 rooms:

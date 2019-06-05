@@ -42,13 +42,16 @@ net_base: &netmeter
   measurements:
   - physical_quantity: node_vcc
   - physical_quantity: node_rssi
+  - physical_quantity: node_snr
   - physical_quantity: gateway_rssi
+  - physical_quantity: gateway_snr
   - physical_quantity: messages
   - physical_quantity: retransmissions
   - physical_quantity: publications
   - physical_quantity: invalid_packets
   - physical_quantity: crc_errors
   - physical_quantity: polling_cycles
+  - physical_quantity: payload
   wireless: true
 
 net_raw:

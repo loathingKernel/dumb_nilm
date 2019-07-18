@@ -45,26 +45,42 @@ net_base: &netmeter
   - physical_quantity: node_snr
   - physical_quantity: gateway_rssi
   - physical_quantity: gateway_snr
+  - physical_quantity: payload
+  wireless: true
+
+net_raw:
+  model: GAIA Project sensor node health sensors
+  sample_period: 30
+  max_sample_period: 90
+  <<: *netmeter
+
+net_avg:
+  model: GAIA Project 5 minute sensor node health averages
+  sample_period: 300
+  max_sample_period: 1200
+  <<: *netmeter
+
+qos_base: &qosmeter
+  measurement:
   - physical_quantity: messages
   - physical_quantity: retransmissions
   - physical_quantity: publications
   - physical_quantity: invalid_packets
   - physical_quantity: crc_errors
   - physical_quantity: polling_cycles
-  - physical_quantity: payload
   wireless: true
 
-net_raw:
+qos_raw:
   model: GAIA Project sensor network QoS sensors
-  sample_period: 30
-  max_sample_period: 90
-  <<: *netmeter
+  sample_period: 900
+  max_sample_period: 3600
+  <<: *qosmeter
 
-net_avg:
+qos_avg:
   model: GAIA Project 5 minute sensor network QoS averages
-  sample_period: 300
-  max_sample_period: 1200
-  <<: *netmeter
+  sample_period: 900
+  max_sample_period: 3600
+  <<: *qosmeter
 
 meteo_drksk:
   model: Dark Sky meteorogical data
@@ -88,3 +104,5 @@ meteo_drksk:
   - physical_quantity: windBearing
   - physical_quantity: windGust
   - physical_quantity: windSpeed
+
+#kate: space-indent on; indent-width 2;

@@ -3,6 +3,7 @@ original_name: Πρότυπο Πειραματικό Λύκειο Πανεπισ
 building_type: academic
 uuid: 3bf1856a-1a61-4db1-a40a-dd217116370f
 
+
 elec_meters:
   1:
     site_meter: true
@@ -25,21 +26,22 @@ elec_meters:
   4:
     site_meter: true
     device_model: elec_avg
-    data_location: /building1/elec/meter1
+    data_location: /building1/elec/meter4
     uuid:
       current: 2f85e206-bb03-40a0-ab53-25c9e4b4bb6d
   5:
     site_meter: true
     device_model: elec_avg
-    data_location: /building1/elec/meter2
+    data_location: /building1/elec/meter5
     uuid:
       current: 02f274d9-ce98-41db-8396-229466fdf924
   6:
     site_meter: true
     device_model: elec_avg
-    data_location: /building1/elec/meter3
+    data_location: /building1/elec/meter6
     uuid:
       current: d05c37b1-93aa-4856-bf71-3cea43c20ee5
+
 
 env_meters:
   1:
@@ -103,6 +105,7 @@ env_meters:
       temperature: 5ed8c628-f839-45cf-9981-6191e82de2c3
       humidity: 5d7e8226-b678-478e-b975-10ba2c35c5d3
 
+
 net_meters:
   1:
     site_meter: false
@@ -114,12 +117,6 @@ net_meters:
       node_snr:
       gateway_rssi: b7bada39-cd35-486d-9d10-dd5ba8dd5252
       gateway_snr:
-      messages: 9c4eb185-fb3a-44c3-8de1-b47aef0ceb4a
-      retransmissions: b77aca5d-078e-495f-a141-050e798d9d1f
-      publications: b18713ea-dcb7-4c45-b21c-5aa7734d97a5
-      invalid_packets: 4e5a1516-6deb-41ac-abbe-fdd817ea6ac1
-      crc_errors: 4f6bf45d-77a2-4c43-af8a-ae53a7664eb7
-      polling_cycles: ff7cbabd-6298-491c-a796-8e843cd7fb8b
       payload:
   2:
     site_meter: false
@@ -131,12 +128,6 @@ net_meters:
       node_snr:
       gateway_rssi: 5257be87-4e50-45e5-b8e5-8b8f3ede980f
       gateway_snr:
-      messages: c27c7813-28eb-49a9-886c-8314567fcf90
-      retransmissions: 8af01baa-5579-4353-ab33-7de07afe54bd
-      publications: 1dc663e9-9988-4c5c-a0ea-25fcd08adb8d
-      invalid_packets: 698dd51a-68a5-441f-91d2-42088fb5498a
-      crc_errors: 9b1ee27e-5fb9-4062-8fc7-619f4628a17c
-      polling_cycles: 4fe01098-2292-4628-a2f0-994010189ace
       payload:
   3:
     site_meter: false
@@ -148,12 +139,6 @@ net_meters:
       node_snr:
       gateway_rssi: 0d58c7be-273e-4e23-881c-f0e06a89c5dc
       gateway_snr:
-      messages: f03faa19-efa7-43ec-84f5-1a80f9204fad
-      retransmissions: 15f59f96-eacb-4de7-9940-41686c0ff4fd
-      publications: bdc629dd-204b-4a6b-a506-cdedc6442c62
-      invalid_packets: 20dbf777-3314-41f3-aa29-2ff57528cc3a
-      crc_errors: 1844f94f-f6b7-4187-a1b7-c6b6d2597545
-      polling_cycles: 1a9e19b3-bbfc-450d-9ab4-39f825742bf0
       payload:
   4:
     site_meter: false
@@ -165,16 +150,10 @@ net_meters:
       node_snr:
       gateway_rssi: 1ae19853-59e8-41be-bf97-a3f90cfc97c5
       gateway_snr:
-      messages: 9249f083-2003-4ff2-bb0c-12d7f1e15419
-      retransmissions: c184be2d-ba2e-45ea-a023-0efec79c523e
-      publications: 3df281dc-f965-4b04-9b22-0e18ab9e735c
-      invalid_packets: 5035caac-3f7a-4b19-8c71-756618025d73
-      crc_errors: f81663e7-3c69-4349-a243-45075dc2edc0
-      polling_cycles: 6d37c50a-17cd-48f5-a314-b029f3400754
       payload:
   5:
     site_meter: false
-    device_model:
+    device_model: net_avg
     data_location: /building1/net/meter5
     uuid:
       node_vcc: b0e13c00-0750-471b-9f89-8b5379853787
@@ -182,12 +161,6 @@ net_meters:
       node_snr:
       gateway_rssi: 8b2ed28f-d23c-46c1-8e5a-e06df09b6cc1
       gateway_snr:
-      messages: b34830e9-8f4a-4591-9c23-4596c5a1a0d9
-      retransmissions: eaa51816-845d-4b58-9e73-0d5eb179ff69
-      publications: 52f1f26b-f606-4f56-9151-d9ed76d0f77c
-      invalid_packets: 16a1935a-7ba2-489e-bbee-e66d0801bc8f
-      crc_errors: 2f872b57-bd56-4558-85ee-b79308de3c1e
-      polling_cycles: 77803a64-f927-42ad-aade-bf8de663532e
       payload:
   6:
     site_meter: false
@@ -199,12 +172,6 @@ net_meters:
       node_snr:
       gateway_rssi: 7ba19149-d78b-4786-be39-3220fcbb24cd
       gateway_snr:
-      messages: e2f579fc-9724-4199-b7d9-577e8c459783
-      retransmissions: 4793c148-87c6-42c3-9f0e-25cef2a33676
-      publications: dc083976-e899-4440-aab9-0a27fe14e03d
-      invalid_packets: 3f26849e-3b84-4924-952d-4d1520d2720c
-      crc_errors: 895f4184-a55e-4e78-8dcb-58197e93464f
-      polling_cycles: 8ac7496f-a02a-4968-976a-fde169e4718b
       payload:
   7:
     site_meter: false
@@ -216,12 +183,6 @@ net_meters:
       node_snr:
       gateway_rssi: 38db54ad-5757-40a8-9a41-e0c1ff70ce60
       gateway_snr:
-      messages: 4e5a9319-e28d-4964-a80c-04580758296d
-      retransmissions: ac1e691a-cc48-43e9-ab23-84f30d576025
-      publications: 3ad6a0e5-4cf5-4195-80f9-0cd5c6903c3e
-      invalid_packets: cf603aa8-bf06-47fc-95f7-22dccafec9c5
-      crc_errors: 79cb18f8-3b84-40dd-b313-268dafa61425
-      polling_cycles: bbe931f3-459f-44be-b19a-ce9157ae5949
       payload:
   8:
     site_meter: false
@@ -233,13 +194,99 @@ net_meters:
       node_snr:
       gateway_rssi: c4b3a6bd-7c7f-426b-81c3-ae81c215b4b3
       gateway_snr:
+      payload:
+
+
+qos_meters:
+  1:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter1
+    uuid:
+      messages: 9c4eb185-fb3a-44c3-8de1-b47aef0ceb4a
+      retransmissions: b77aca5d-078e-495f-a141-050e798d9d1f
+      publications: b18713ea-dcb7-4c45-b21c-5aa7734d97a5
+      invalid_packets: 4e5a1516-6deb-41ac-abbe-fdd817ea6ac1
+      crc_errors: 4f6bf45d-77a2-4c43-af8a-ae53a7664eb7
+      polling_cycles: ff7cbabd-6298-491c-a796-8e843cd7fb8b
+  2:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter2
+    uuid:
+      messages: c27c7813-28eb-49a9-886c-8314567fcf90
+      retransmissions: 8af01baa-5579-4353-ab33-7de07afe54bd
+      publications: 1dc663e9-9988-4c5c-a0ea-25fcd08adb8d
+      invalid_packets: 698dd51a-68a5-441f-91d2-42088fb5498a
+      crc_errors: 9b1ee27e-5fb9-4062-8fc7-619f4628a17c
+      polling_cycles: 4fe01098-2292-4628-a2f0-994010189ace
+  3:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter3
+    uuid:
+      messages: f03faa19-efa7-43ec-84f5-1a80f9204fad
+      retransmissions: 15f59f96-eacb-4de7-9940-41686c0ff4fd
+      publications: bdc629dd-204b-4a6b-a506-cdedc6442c62
+      invalid_packets: 20dbf777-3314-41f3-aa29-2ff57528cc3a
+      crc_errors: 1844f94f-f6b7-4187-a1b7-c6b6d2597545
+      polling_cycles: 1a9e19b3-bbfc-450d-9ab4-39f825742bf0
+  4:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter4
+    uuid:
+      messages: 9249f083-2003-4ff2-bb0c-12d7f1e15419
+      retransmissions: c184be2d-ba2e-45ea-a023-0efec79c523e
+      publications: 3df281dc-f965-4b04-9b22-0e18ab9e735c
+      invalid_packets: 5035caac-3f7a-4b19-8c71-756618025d73
+      crc_errors: f81663e7-3c69-4349-a243-45075dc2edc0
+      polling_cycles: 6d37c50a-17cd-48f5-a314-b029f3400754
+  5:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter5
+    uuid:
+      messages: b34830e9-8f4a-4591-9c23-4596c5a1a0d9
+      retransmissions: eaa51816-845d-4b58-9e73-0d5eb179ff69
+      publications: 52f1f26b-f606-4f56-9151-d9ed76d0f77c
+      invalid_packets: 16a1935a-7ba2-489e-bbee-e66d0801bc8f
+      crc_errors: 2f872b57-bd56-4558-85ee-b79308de3c1e
+      polling_cycles: 77803a64-f927-42ad-aade-bf8de663532e
+  6:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter6
+    uuid:
+      messages: e2f579fc-9724-4199-b7d9-577e8c459783
+      retransmissions: 4793c148-87c6-42c3-9f0e-25cef2a33676
+      publications: dc083976-e899-4440-aab9-0a27fe14e03d
+      invalid_packets: 3f26849e-3b84-4924-952d-4d1520d2720c
+      crc_errors: 895f4184-a55e-4e78-8dcb-58197e93464f
+      polling_cycles: 8ac7496f-a02a-4968-976a-fde169e4718b
+  7:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter7
+    uuid:
+      messages: 4e5a9319-e28d-4964-a80c-04580758296d
+      retransmissions: ac1e691a-cc48-43e9-ab23-84f30d576025
+      publications: 3ad6a0e5-4cf5-4195-80f9-0cd5c6903c3e
+      invalid_packets: cf603aa8-bf06-47fc-95f7-22dccafec9c5
+      crc_errors: 79cb18f8-3b84-40dd-b313-268dafa61425
+      polling_cycles: bbe931f3-459f-44be-b19a-ce9157ae5949
+  8:
+    site_meter: false
+    device_model: qos_avg
+    data_location: /building1/qos/meter8
+    uuid:
       messages: d2fe1187-2441-4495-b5ae-3adc5e067ff9
       retransmissions: d409eeaa-1877-41d4-802f-639a431638fe
       publications: d60c665b-499b-4fcd-9782-fb7a8fd6d212
       invalid_packets: 68f26b92-67e3-4711-948a-875b2280ab30
       crc_errors: 5614900f-a3f4-4ff4-940b-b420bb075a1f
       polling_cycles: d58357ae-da41-4103-a36b-e820cbefb42b
-      payload:
+
 
 wthr_meters:
   1:
